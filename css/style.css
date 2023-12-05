@@ -1,5 +1,11 @@
 /* RESET */
 
+:root {
+  --small-spacing: 5px;
+  --med-spacing: 10px;
+  --big-spacing: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +13,15 @@
 }
 
 img {
-  width: 30%;
+  width: 28%;
+  float: left;
+  margin-right: 15px;
 }
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 body {
   font-family: "Fredoka", sans-serif;
@@ -50,6 +58,7 @@ body {
   color: white;
   margin: 30px 0;
   margin-right: 30px;
+  box-shadow: 20px 20px 50px 5px black;
 }
 
 /* DEBUG */
@@ -76,5 +85,14 @@ body {
 /* MAIN */
 
 .info {
-  float: right;
+  margin-top: var(--med-spacing);
+}
+
+.info h2 {
+  margin-bottom: var(--small-spacing);
+}
+
+.info a {
+  display: block;
+  margin-top: var(--small-spacing);
 }
